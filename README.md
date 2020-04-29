@@ -1,8 +1,11 @@
 ## Stock Market
 
 ```
-TO INSTALL: npm install
-TO START: npm start
+Installation:
+- fork and clone the project
+- in your terminal
+ $ npm install
+ $ npm start
 ```
 
 After the stocks are fetched:
