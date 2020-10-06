@@ -13,7 +13,7 @@ state = {
 
   componentDidMount() {
     const symbols = ["DOW", "AAPL", "FB", "ABT", "AMZN", "KO", "ABT", "DJ", "KSWS", "NYT", "MCD", "LUV", "TIF", "NOK", "FOSL", "DAL", "AET", "AW", "AOC", "BAC", "Carnival Corp", "F", "MOT", "NVDA", "MSFT", "PCLN", "NTRS", "ORCL", "TSLA", "SBUX", "BABA", "GE", "BA", "YHOO", "WHR", "TM", "WAG", "WMT", "NKE", "CHL", "HDI", "HD", "GOOGL", "KDE", "COMS", "SVNX", "AET", "T", "APPB", "BP", "CRA", "CEN", "HSY"]
-    fetch(`https://financialmodelingprep.com/api/v3/quote/${symbols}`)
+    fetch(`https://financialmodelingprep.com/api/v3/quote/${symbols}?apikey=a0a157c96904aea3562d6398c3897aed`)
     .then(resp => resp.json())
     .then(stocks => this.setState({
       stocks: stocks
@@ -26,7 +26,7 @@ state = {
       return selectedStocks.sort((firstStock, secondStock) => { if (firstStock.name < secondStock.name) {return -1}
                                                               if (firstStock.name > secondStock.name) {return 1}
                                                               return 0 })
-    } else if (this.state.sortBy == 'Price'){
+    } else if (this.state.sortBy === 'Price'){
       return selectedStocks.sort((firstStock, secondStock) => firstStock.price - secondStock.price)
     } else {
       return selectedStocks;
