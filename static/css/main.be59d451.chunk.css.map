@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,GACE,YACF,CAEA,GACE,iBACF,CAEA,KACE,wBACF","file":"main.be59d451.chunk.css","sourcesContent":["h1 {\n  padding: 3rem;\n}\n\nh2 {\n  text-align: center;\n}\n\n.app {\n  background-color: #DEDEDE;\n}\n"]}
